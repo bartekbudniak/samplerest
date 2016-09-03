@@ -1,0 +1,8 @@
+wyœwietla listê wszystkich filmów
+/films
+wyœwietla/zmienia/kasuje film numer {id}
+/{id}
+wyœwietla/dodaje komentarz do filmu numer {filmId}
+/{filmId}/komentarze
+wyœwietla œredni¹ ocen/dodaje ocenê do filmu numer {filmId}
+/{filmId}/oceny
