@@ -27,12 +27,16 @@ public class Film {
 
 	public double getSredniaOcen() {
 		double suma = 0;
-		int i = 1;
+		int i = 0;
 		for(Ocena o : oceny){
 			suma += o.getOcena();
 			i++;
 		}
-		return suma/i;
+		if(suma/i != 0){
+			return suma/i;
+		}
+		else 
+			return 0;
 	}
 
 	public void setOceny(List<Ocena> oceny) {

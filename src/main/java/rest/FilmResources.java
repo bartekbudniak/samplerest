@@ -14,7 +14,6 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-
 import domain.Film;
 import domain.Komentarz;
 import domain.Ocena;
@@ -25,17 +24,16 @@ public class FilmResources {
 
 	private FilmService db = new FilmService();
 	
-	
-	/*@GET
+	@GET
 	@Produces(MediaType.APPLICATION_JSON)
 	public List<Film> getAll(){
 		return db.getAll();
-	}*/
-	@GET
+	}
+	/*@GET
 	@Produces(MediaType.TEXT_PLAIN)
 	public Response test(){
 		return Response.ok("praca").build();
-	}
+	}*/
 	
 	@GET
 	@Path("/{id}")
